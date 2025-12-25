@@ -26,3 +26,11 @@ Today is 29/11/2025 11:29AM, i started my dsa journey with Udemy Course & Master
 - O(n ^ c) = Where c (Constant & c > 0) is 2 & n is 20 then Code will runs 20 ^ 2 -> 400 times . Name of this - Polynomial complexity
 - O(c ^ n) = opposite of above complexity. Name of this - Exponential complexity
 - n! < n ^ n & 2 ^ n < n! < n ^ n
+
+# Array - DS
+
+- Array is stored in a continuous in memory
+- When array reaches its size then new array comes in picture with size previous_array \* 2 with all old elements are copy into new array.
+- This concept follows in this programming languages Python (lists), JavaScript (arrays), Java (ArrayList) Java has both support Static & Dynamic, C++ (vector)
+  C# (List), Ruby (arrays)
+- Array operation like `insert`, `remove`, `get`, `count` , `pop` with take O(n) time complexity.
