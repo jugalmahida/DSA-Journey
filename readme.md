@@ -34,3 +34,31 @@ Today is 29/11/2025 11:29AM, i started my dsa journey with Udemy Course & Master
 - This concept follows in this programming languages Python (lists), JavaScript (arrays), Java (ArrayList) Java has both support Static & Dynamic, C++ (vector)
   C# (List), Ruby (arrays)
 - Array operation like `insert`, `remove`, `get`, `count` , `pop` with take O(n) time complexity.
+- Find memory address formula :- \
+  arr(i) = Base Address + (i - LowerBound of an index) \* size of an element in bytes
+- Base Address is first array element's memory address
+- i - Given index
+- LowerBound - means where array current position by default it will be 0 but if where at 2th index and find 6th index memory address then Lower Bound will be 2
+
+## Multidimensional Array
+
+- This type of array will be stored in memory in 2 types.
+- Consider this array to understand.\
+  [\
+   &nbsp; [96,32,4], \
+   &nbsp; [4,8,2], \
+   &nbsp; [9,7,3] \
+  ]
+
+1. Row Major - Where all element will be stored in memory in row wise [96,32,4,4,8,2,9,7,3]
+2. Column Major - Where all element will be stored in memory in column wise [96,4,9,32,8,7,4,2,3]
+
+- Find memory address of given index in row major array ( arr[i][j] ) :- \
+  Base Address + [ ( i - LBR) * Number_of_Columns + ( j - LBC ) ] \* size of an element in bytes
+- Find memory address of given index in column major array ( arr[i][j] ) :- \
+  Base Address + [ ( j - LBC) * Number_of_Rows + ( i - LBR ) ] \* size of an element in bytes
+- i - given row index
+- LBR - Lower Bound of Row position
+- Number Of columns present in array
+- j - given column index
+- LBC - Lower Bound of Column position
